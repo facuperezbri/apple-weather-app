@@ -1,0 +1,85 @@
+.cardInfoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	width: 220px;
+	height: 250px;
+
+	border-radius: 20px;
+	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.3);
+
+	color: var(--navText);
+
+	text-align: left;
+
+	margin: 1rem;
+
+	padding: 1rem 0;
+	padding-left: 1rem;
+}
+
+.day {
+	background: linear-gradient(
+		180deg,
+		rgba(59, 104, 163, 1) 70%,
+		rgba(109, 156, 217, 1) 100%
+	);
+}
+
+.night {
+	background: linear-gradient(
+		180deg,
+		rgb(12, 22, 35) 70%,
+		rgb(25, 45, 70) 100%
+	);
+}
+
+.cardTitle {
+	font-weight: 300;
+}
+
+.cardTemperature {
+	font-size: 4em;
+	font-weight: 300;
+}
+
+.cardButton {
+	position: relative;
+	left: 5.5rem;
+	top: 3rem;
+	width: 20px;
+	transition: 0.5s;
+	border: none;
+	height: 20px;
+	border-radius: 50%;
+	color: white;
+	background: rgb(255, 69, 58);
+}
+
+.cardButton:hover {
+	transform: scale(1.2);
+}
+
+.iconoClima {
+	max-height: 50px;
+	max-width: 50px;
+}
+
+h5 {
+	text-transform: capitalize;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.minmaxContainer {
+	display: flex;
+	text-align: left;
+}
+
+.minmaxContainer p {
+	margin-right: 1rem;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 500;
+}
