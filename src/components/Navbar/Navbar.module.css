@@ -37,4 +37,9 @@ nav {
 	font-weight: 500;
 	text-transform: uppercase;
 	color: var(--navText);
+	transition: 0.4s;
+}
+
+.navList li:hover {
+	color: orange;
 }

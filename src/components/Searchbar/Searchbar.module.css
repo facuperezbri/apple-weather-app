@@ -4,3 +4,6 @@ input {
 	height: 25px;
 	margin-right: 1rem;
 }
+input::placeholder {
+	padding-left: 0.3rem;
+}

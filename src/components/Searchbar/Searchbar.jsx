@@ -13,7 +13,7 @@ export default function Searchbar({ onSearch }) {
 		>
 			<input
 				type='text'
-				placeholder='Search for a city'
+				placeholder='Search for a city...'
 				onChange={(e) => setCity(e.target.value)}
 				value={city}
 			/>
