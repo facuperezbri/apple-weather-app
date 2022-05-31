@@ -42,6 +42,10 @@ function App() {
 						country: json.sys.country,
 						image: json.weather[0].icon,
 						id: json.sys.id,
+						lon: json.coord.lon,
+						lat: json.coord.lat,
+						visibilty: json.visibilty,
+						wind: json.wind.speed,
 					};
 					setCities([...cities, city]);
 				} else {

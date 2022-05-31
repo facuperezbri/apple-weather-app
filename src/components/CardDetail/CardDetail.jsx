@@ -30,6 +30,22 @@ export default function CardDetail({ city }) {
 						/>
 					</video>
 				);
+			case "overcast clouds":
+				return hour >= 7 && hour <= 19 ? (
+					<video autoPlay muted loop>
+						<source
+							src='https://res.cloudinary.com/ddbboqiz8/video/upload/v1653955097/pexels-miguel-a%CC%81-padrin%CC%83a%CC%81n-6772135_wdizxs.mp4'
+							type='video/mp4'
+						/>
+					</video>
+				) : (
+					<video autoPlay muted loop>
+						<source
+							src='https://res.cloudinary.com/ddbboqiz8/video/upload/v1653953915/Pexels_Videos_2792967_hvfmoh.mp4'
+							type='video/mp4'
+						/>
+					</video>
+				);
 			default:
 				return "foo";
 		}

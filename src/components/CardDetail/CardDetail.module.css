@@ -44,3 +44,53 @@ video {
 .minmaxContainer p {
 	margin: 0.3rem;
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-row-gap: 5px;
+	width: fit-content;
+
+	justify-items: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	margin: 3rem 0.5rem;
+
+	color: white;
+	font-size: 2rem;
+
+	border-radius: 20px;
+	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.3);
+
+	width: 220px;
+	height: 220px;
+}
+
+.day {
+	background: linear-gradient(
+		180deg,
+		rgba(59, 104, 163, 1) 70%,
+		rgb(92, 132, 185) 100%
+	);
+}
+
+.night {
+	background: linear-gradient(
+		180deg,
+		rgb(12, 22, 35) 70%,
+		rgb(25, 45, 70) 100%
+	);
+}
