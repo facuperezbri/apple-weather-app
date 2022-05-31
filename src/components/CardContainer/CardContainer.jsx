@@ -12,11 +12,11 @@ export default function CardContainer({ cities, onClose }) {
 					temp={c.temp}
 					weather={c.weather}
 					image={c.image}
-					id={c.id}
 					onClose={() => onClose(c.id)}
 					description={c.description}
 					min={c.min}
 					max={c.max}
+					id={c.id}
 				/>
 			))}
 		</div>

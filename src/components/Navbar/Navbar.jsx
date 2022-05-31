@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import image from "../../assets/henry-logo.png";
 import Searchbar from "../Searchbar/Searchbar";
@@ -22,7 +23,7 @@ export default function Navbar({ onSearch }) {
 					</Link>
 				</ul>
 			</nav>
-			<Searchbar onSearch={onSearch} />
+			<Route exact path='/' render={() => <Searchbar onSearch={onSearch} />} />
 		</header>
 	);
 }

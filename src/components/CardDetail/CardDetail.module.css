@@ -1,0 +1,46 @@
+video {
+	z-index: -1;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cardDetailContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 2rem;
+}
+
+.mainContainer {
+	color: white;
+}
+
+.name {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.temp {
+	font-size: 7rem;
+	font-weight: 200;
+}
+
+.description {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.minmaxContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.minmaxContainer p {
+	margin: 0.3rem;
+}
