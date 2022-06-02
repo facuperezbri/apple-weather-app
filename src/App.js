@@ -23,6 +23,11 @@ function App() {
 	}
 
 	function onSearch(city) {
+		for (let i = 0; i < cities.length; i++) {
+			if (cities[i].name.toLowerCase() === city.toLowerCase()) {
+				return alert("City is already added.");
+			}
+		}
 		fetch(
 			`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 		)
@@ -52,6 +57,7 @@ function App() {
 					alert("City not found");
 				}
 			});
+		console.log(cities);
 	}
 
 	return (
