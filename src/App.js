@@ -52,7 +52,6 @@ function App() {
 					alert("City not found");
 				}
 			});
-		console.log(cities);
 	}
 
 	return (
