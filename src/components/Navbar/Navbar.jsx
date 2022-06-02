@@ -6,8 +6,9 @@ import Searchbar from "../Searchbar/Searchbar";
 import style from "./Navbar.module.css";
 
 export default function Navbar({ onSearch }) {
+	var hour = new Date().getHours();
 	return (
-		<header>
+		<header className={`${hour > 7 && hour < 19 ? style.day : style.night}`}>
 			<nav>
 				<a href='https://www.soyhenry.com/' target='_blank' rel='noreferrer'>
 					{" "}

@@ -12,7 +12,7 @@ export default function Card(props) {
 			<Link to={`/city/${props.id}`}>
 				<div
 					className={`${style.cardInfoContainer} ${
-						hour >= 7 && hour <= 19 ? style.day : style.night
+						hour > 7 && hour < 19 ? style.day : style.night
 					}`}
 				>
 					<h3 className={style.cardTitle}>{props.name}</h3>

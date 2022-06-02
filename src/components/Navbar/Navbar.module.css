@@ -43,3 +43,11 @@ nav {
 .navList li:hover {
 	color: orange;
 }
+
+.day {
+	background: rgb(59, 104, 163);
+}
+
+.night {
+	background: rgb(12, 22, 35);
+}
